@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="14008000">
+<Project Type="Project" LVVersion="17008000">
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
@@ -138,6 +138,8 @@
 			</Item>
 			<Item Name="fifo channel.lvclass" Type="LVClass" URL="../../source/fifo channel/fifo channel.lvclass"/>
 			<Item Name="FPGA Channel.lvclass" Type="LVClass" URL="../../source/fpga channel/FPGA Channel.lvclass"/>
+			<Item Name="FPGA Module configuration.lvclass" Type="LVClass" URL="../../source/module/configuration/FPGA Module configuration.lvclass"/>
+			<Item Name="FPGA Module runtime.lvclass" Type="LVClass" URL="../../source/module/execution/FPGA Module runtime.lvclass"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
