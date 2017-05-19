@@ -9,5 +9,4 @@
 </Property>
 	<Item Name="init runtime test.vi" Type="VI" URL="../init runtime test.vi"/>
 	<Item Name="Runtime Test.vi" Type="VI" URL="../Runtime Test.vi"/>
-	<Item Name="Ui.vi" Type="VI" URL="../run/Ui.vi"/>
 </Library>
