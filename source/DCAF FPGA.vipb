@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2017-05-19 16:23:34" Modified_Date="2017-05-19 16:29:44" Creator="Lee Harding" Comments="" ID="3c4a8f104834f7511cf6a60cabebe0f5">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2017-05-19 16:23:34" Modified_Date="2017-05-19 16:35:51" Creator="Lee Harding" Comments="" ID="ce3f18fb37486dd13f44a0e2ab5cd434">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_dcaf_FPGA</Package_File_Name>
     <Library_Version>1.1.1.9</Library_Version>
@@ -30,7 +30,9 @@
     <VI_Package_Configuration_File>DCAF FPGA.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary>Interface to FPGA front panels for DCAF</One_Line_Description_Summary>
-      <Description>Pass data to and from an FPGA target's front panel via DCAF.</Description>
+      <Description>Pass data to and from an FPGA target's front panel via DCAF.
+
+This module requires installation of the LabVIEW FPGA Advanced Sessions Resources library, available here: http://forums.ni.com/t5/NI-Labs-Toolkits/LabVIEW-FPGA-Advanced-Session-Resources/ta-p/3500447</Description>
       <Copyright/>
       <Packager>Systems Engineering</Packager>
       <URL>http://ni.com/dcaf</URL>
@@ -108,9 +110,6 @@
         <Namespace_Type>Prefix</Namespace_Type>
         <Namespace/>
       </Namespace_Overrides>
-      <Compile_Exclusions>
-        <Path/>
-      </Compile_Exclusions>
     </Source_Files>
     <License_Agreement_Filepath>..\LICENSE</License_Agreement_Filepath>
     <Licensing_and_Activation>
