@@ -7,32 +7,28 @@
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Add Remove Test.lvtest" Type="TestItem" URL="../Add Remove Test.lvtest">
 		<Property Name="utf.test.bind" Type="Str">FPGA Windows Tests.lvlib:Add Remove Test.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">F76AA795-9A1C-9AC2-0566-4C94C96F455E</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">CA3198B0-0344-B002-9432-062369AD2837</Property>
 	</Item>
 	<Item Name="Add Remove Test.vi" Type="VI" URL="../Add Remove Test.vi"/>
 	<Item Name="config crosslink test.lvtest" Type="TestItem" URL="../config crosslink test.lvtest">
 		<Property Name="utf.test.bind" Type="Str">FPGA Windows Tests.lvlib:config crosslink test.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">D58ED9D6-2605-E878-A53E-AC2A4F6A2F67</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">03391C83-46B0-6EC3-8037-210A93114588</Property>
 	</Item>
 	<Item Name="config crosslink test.vi" Type="VI" URL="../config crosslink test.vi"/>
 	<Item Name="get channels test.lvtest" Type="TestItem" URL="../get channels test.lvtest">
 		<Property Name="utf.test.bind" Type="Str">FPGA Windows Tests.lvlib:get channels test.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">B04F8348-4B32-4BE3-A090-5C22852DCF4D</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">24A5DA6C-7FCA-FA9A-DBE4-1CBD99DB325C</Property>
 	</Item>
 	<Item Name="get channels test.vi" Type="VI" URL="../get channels test.vi"/>
 	<Item Name="modify channel test.lvtest" Type="TestItem" URL="../modify channel test.lvtest">
 		<Property Name="utf.test.bind" Type="Str">FPGA Windows Tests.lvlib:modify channel test.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">ECF2AD1E-E684-A80F-BA6A-3BB3797E72FC</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">27F1D27B-3CF0-121F-49CC-0574594BE098</Property>
 	</Item>
 	<Item Name="modify channel test.vi" Type="VI" URL="../modify channel test.vi"/>
 	<Item Name="runtime to editor crosslink test.lvtest" Type="TestItem" URL="../runtime to editor crosslink test.lvtest">
 		<Property Name="utf.test.bind" Type="Str">FPGA Windows Tests.lvlib:runtime to editor crosslink test.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">258F6A6D-8786-BEA8-9AC4-D2630FC77113</Property>
+		<Property Name="utf.vector.test.bind" Type="Str">52B1EB91-15F1-C867-7F28-767747E8C58A</Property>
 	</Item>
 	<Item Name="runtime to editor crosslink test.vi" Type="VI" URL="../runtime to editor crosslink test.vi"/>
-	<Item Name="serialization tests.lvtest" Type="TestItem" URL="../serialization tests.lvtest">
-		<Property Name="utf.test.bind" Type="Str">serialization tests.vi</Property>
-		<Property Name="utf.vector.test.bind" Type="Str">1966013A-1417-04A3-EE7D-6C995B7BAF81</Property>
-	</Item>
 	<Item Name="ToTable Test.vi" Type="VI" URL="../ToTable Test.vi"/>
 </Library>
