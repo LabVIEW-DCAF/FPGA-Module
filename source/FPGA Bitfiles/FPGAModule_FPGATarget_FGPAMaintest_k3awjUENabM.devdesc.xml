@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeviceDescription xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.3s-software.com/schemas/DeviceDescription-1.0.xsd">
+  <Types namespace="localTypes">
+    <EnumType name="NIBOOL" basetype="std:USINT">
+      <Enum identifier="False">
+        <Value>0</Value>
+        <VisibleName name="local:False">False</VisibleName>
+      </Enum>
+      <Enum identifier="True">
+        <Value>1</Value>
+        <VisibleName name="local:True">True</VisibleName>
+      </Enum>
+    </EnumType>
+    <StructType name="FIFO_IN_BOOL">
+      <Component identifier="ReadSize" type="std:UINT">
+        <Default>0</Default>
+        <VisibleName name="local:status">ReadSize</VisibleName>
+      </Component>
+      <Component identifier="Buffer" type="localTypes:FIFO_BUF_BOOL">
+        <Default>0</Default>
+        <VisibleName name="local:Buffer">Buffer</VisibleName>
+      </Component>
+    </StructType>
+    <ArrayType name="FIFO_BUF_BOOL" basetype="std:BOOL">
+      <FirstDimension>
+        <LowerBorder>0</LowerBorder>
+        <UpperBorder>8127</UpperBorder>
+      </FirstDimension>
+    </ArrayType>
+    <StructType name="FIFO_IN_SINT">
+      <Component identifier="ReadSize" type="std:UINT">
+        <Default>0</Default>
+        <VisibleName name="local:status">ReadSize</VisibleName>
+      </Component>
+      <Component identifier="Buffer" type="localTypes:FIFO_BUF_SINT">
+        <Default>0</Default>
+        <VisibleName name="local:Buffer">Buffer</VisibleName>
+      </Component>
+    </StructType>
+    <ArrayType name="FIFO_BUF_SINT" basetype="std:SINT">
+      <FirstDimension>
+        <LowerBorder>0</LowerBorder>
+        <UpperBorder>8127</UpperBorder>
+      </FirstDimension>
+    </ArrayType>
+    <StructType name="FIFO_IN_INT">
+      <Component identifier="ReadSize" type="std:UINT">
+        <Default>0</Default>
+        <VisibleName name="local:status">ReadSize</VisibleName>
+      </Component>
+      <Component identifier="Buffer" type="localTypes:FIFO_BUF_INT">
+        <Default>0</Default>
+        <VisibleName name="local:Buffer">Buffer</VisibleName>
+      </Component>
+    </StructType>
+    <ArrayType name="FIFO_BUF_INT" basetype="std:INT">
+      <FirstDimension>
+        <LowerBorder>0</LowerBorder>
+        <UpperBorder>4063</UpperBorder>
+      </FirstDimension>
+    </ArrayType>
+    <StructType name="FIFO_IN_DINT">
+      <Component identifier="ReadSize" type="std:UINT">
+        <Default>0</Default>
+        <VisibleName name="local:status">ReadSize</VisibleName>
+      </Component>
+      <Component identifier="Buffer" type="localTypes:FIFO_BUF_DINT">
+        <Default>0</Default>
+        <VisibleName name="local:Buffer">Buffer</VisibleName>
+      </Component>
+    </StructType>
+    <ArrayType name="FIFO_BUF_DINT" basetype="std:DINT">
+      <FirstDimension>
+        <LowerBorder>0</LowerBorder>
+        <UpperBorder>2031</UpperBorder>
+      </FirstDimension>
+    </ArrayType>
+    <StructType name="FIFO_IN_LINT">
+      <Component identifier="ReadSize" type="std:UINT">
+        <Default>0</Default>
+        <VisibleName name="local:status">ReadSize</VisibleName>
+      </Component>
+      <Component identifier="Buffer" type="localTypes:FIFO_BUF_LINT">
+        <Default>0</Default>
+        <VisibleName name="local:Buffer">Buffer</VisibleName>
+      </Component>
+    </StructType>
+    <ArrayType name="FIFO_BUF_LINT" basetype="std:LINT">
+      <FirstDimension>
+        <LowerBorder>0</LowerBorder>
+        <UpperBorder>1015</UpperBorder>
+      </FirstDimension>
+    </ArrayType>
+    <StructType name="FIFO_IN_USINT">
+      <Component identifier="ReadSize" type="std:UINT">
+        <Default>0</Default>
+        <VisibleName name="local:status">ReadSize</VisibleName>
+      </Component>
+      <Component identifier="Buffer" type="localTypes:FIFO_BUF_USINT">
+        <Default>0</Default>
+        <VisibleName name="local:Buffer">Buffer</VisibleName>
+      </Component>
+    </StructType>
+    <ArrayType name="FIFO_BUF_USINT" basetype="std:USINT">
+      <FirstDimension>
+        <LowerBorder>0</LowerBorder>
+        <UpperBorder>8127</UpperBorder>
+      </FirstDimension>
+    </ArrayType>
+    <StructType name="FIFO_IN_UINT">
+      <Component identifier="ReadSize" type="std:UINT">
+        <Default>0</Default>
+        <VisibleName name="local:status">ReadSize</VisibleName>
+      </Component>
+      <Component identifier="Buffer" type="localTypes:FIFO_BUF_UINT">
+        <Default>0</Default>
+        <VisibleName name="local:Buffer">Buffer</VisibleName>
+      </Component>
+    </StructType>
+    <ArrayType name="FIFO_BUF_UINT" basetype="std:UINT">
+      <FirstDimension>
+        <LowerBorder>0</LowerBorder>
+        <UpperBorder>4063</UpperBorder>
+      </FirstDimension>
+    </ArrayType>
+    <StructType name="FIFO_IN_UDINT">
+      <Component identifier="ReadSize" type="std:UINT">
+        <Default>0</Default>
+        <VisibleName name="local:status">ReadSize</VisibleName>
+      </Component>
+      <Component identifier="Buffer" type="localTypes:FIFO_BUF_UDINT">
+        <Default>0</Default>
+        <VisibleName name="local:Buffer">Buffer</VisibleName>
+      </Component>
+    </StructType>
+    <ArrayType name="FIFO_BUF_UDINT" basetype="std:UDINT">
+      <FirstDimension>
+        <LowerBorder>0</LowerBorder>
+        <UpperBorder>2031</UpperBorder>
+      </FirstDimension>
+    </ArrayType>
+    <StructType name="FIFO_IN_ULINT">
+      <Component identifier="ReadSize" type="std:UINT">
+        <Default>0</Default>
+        <VisibleName name="local:status">ReadSize</VisibleName>
+      </Component>
+      <Component identifier="Buffer" type="localTypes:FIFO_BUF_ULINT">
+        <Default>0</Default>
+        <VisibleName name="local:Buffer">Buffer</VisibleName>
+      </Component>
+    </StructType>
+    <ArrayType name="FIFO_BUF_ULINT" basetype="std:ULINT">
+      <FirstDimension>
+        <LowerBorder>0</LowerBorder>
+        <UpperBorder>1015</UpperBorder>
+      </FirstDimension>
+    </ArrayType>
+    <StructType name="FIFO_IN_REAL">
+      <Component identifier="ReadSize" type="std:UINT">
+        <Default>0</Default>
+        <VisibleName name="local:status">ReadSize</VisibleName>
+      </Component>
+      <Component identifier="Buffer" type="localTypes:FIFO_BUF_REAL">
+        <Default>0</Default>
+        <VisibleName name="local:Buffer">Buffer</VisibleName>
+      </Component>
+    </StructType>
+    <ArrayType name="FIFO_BUF_REAL" basetype="std:REAL">
+      <FirstDimension>
+        <LowerBorder>0</LowerBorder>
+        <UpperBorder>2031</UpperBorder>
+      </FirstDimension>
+    </ArrayType>
+    <StructType name="FIFO_IN_LREAL">
+      <Component identifier="ReadSize" type="std:UINT">
+        <Default>0</Default>
+        <VisibleName name="local:status">ReadSize</VisibleName>
+      </Component>
+      <Component identifier="Buffer" type="localTypes:FIFO_BUF_LREAL">
+        <Default>0</Default>
+        <VisibleName name="local:Buffer">Buffer</VisibleName>
+      </Component>
+    </StructType>
+    <ArrayType name="FIFO_BUF_LREAL" basetype="std:LREAL">
+      <FirstDimension>
+        <LowerBorder>0</LowerBorder>
+        <UpperBorder>1015</UpperBorder>
+      </FirstDimension>
+    </ArrayType>
+  </Types>
+  <Strings namespace="local">
+    <Language lang="en">
+      <String identifier="ModelName">cRIO-9068 FPGA</String>
+      <String identifier="DeviceDescription" />
+      <String identifier="VendorName">National Instruments</String>
+      <String identifier="typename">MyDevice_With_Libs</String>
+      <String identifier="typedescription">FPGA Interface Driver for NI cRIO-9068</String>
+    </Language>
+  </Strings>
+  <Device hideInCatalogue="false">
+    <DeviceIdentification>
+      <Type>40100</Type>
+      <Id>112A 0001</Id>
+      <Version>1.1.0.0</Version>
+    </DeviceIdentification>
+    <DeviceInfo>
+      <Name name="local:ModelName">IoDrvNiFpga</Name>
+      <Description name="local:DeviceDescription">FPGA Interface Driver for NI cRIO-9068</Description>
+      <Vendor name="local:VendorName">National Instruments</Vendor>
+      <OrderNumber>???</OrderNumber>
+    </DeviceInfo>
+    <Connector moduleType="257" interface="Common.PCI" role="child" explicit="false" connectorId="1" hostpath="-1">
+      <InterfaceName name="local:PCI">PCI-Bus</InterfaceName>
+      <Slot count="1" allowEmpty="false" />
+    </Connector>
+    <Connector moduleType="40100" interface="MyCompany:Internal" role="parent" explicit="false" connectorId="2" hostpath="1">
+      <InterfaceName name="local:DP">Internal</InterfaceName>
+      <Var max="125" />
+      <HostParameterSet>
+        <Parameter ParameterId="393218" type="std:STRING">
+          <Attributes channel="none" download="true" functional="false" offlineaccess="write" onlineaccess="read" />
+          <Default>'National Instruments'</Default>
+          <Name name="local:Id393218">Vendor</Name>
+          <Description name="local:Id393218.Desc">Vendor of the device</Description>
+        </Parameter>
+        <Parameter ParameterId="393219" type="std:STRING">
+          <Attributes channel="none" download="true" functional="false" offlineaccess="write" onlineaccess="read" />
+          <Default>'NI RIO FPGA'</Default>
+          <Name name="local:Id393219">ModelName</Name>
+          <Description name="local:Id393219.Desc">Model name of the device</Description>
+        </Parameter>
+        <Parameter ParameterId="999999001" type="std:STRING">
+          <Attributes channel="none" download="true" functional="false" offlineaccess="read" onlineaccess="read" />
+          <Default>'5C926A5601ED07A1902E36AFE95FF246'</Default>
+          <Name name="local:Id999999001">FPGA_Signature</Name>
+          <Description name="local:Id999999001.Desc">FPGA image signature</Description>
+        </Parameter>
+        <Parameter ParameterId="999999002" type="std:STRING">
+          <Attributes channel="none" download="true" functional="false" offlineaccess="read" onlineaccess="read" />
+          <Default>'FPGAModule_FPGATarget_FGPAMaintest_k3awjUENabM.lvbitx'</Default>
+          <Name name="local:Id999999002">FPGA_Bitfile_Name</Name>
+          <Description name="local:Id999999002.Desc">Name of the FPGA Bitfile (.lvbitx)</Description>
+        </Parameter>
+        <Parameter ParameterId="999999003" type="std:DINT">
+          <Attributes channel="none" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:Id999999003">DebugMap</Name>
+          <Description name="local:Id999999003.Desc">Enable debug prints for I/O Mapping</Description>
+        </Parameter>
+        <Parameter ParameterId="999999004" type="std:DINT">
+          <Attributes channel="none" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:Id999999004">DebugVals</Name>
+          <Description name="local:Id999999004.Desc">Enable debug prints for I/O values</Description>
+        </Parameter>
+        <Parameter ParameterId="100098304" type="std:REAL">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:SGL_x0020_Control">SGL Control</Name>
+        </Parameter>
+        <Parameter ParameterId="100098310" type="std:BOOL">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:Boolean_x0020_Indicator">Boolean Indicator</Name>
+        </Parameter>
+        <Parameter ParameterId="100098316" type="std:DINT">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:I32_x0020_Indicator">I32 Indicator</Name>
+        </Parameter>
+        <Parameter ParameterId="100098320" type="std:REAL">
+          <Attributes channel="input" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:SGL_x0020_Indicator">SGL Indicator</Name>
+        </Parameter>
+        <Parameter ParameterId="100098326" type="std:BOOL">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:Boolean_x0020_Control">Boolean Control</Name>
+        </Parameter>
+        <Parameter ParameterId="100098332" type="std:DINT">
+          <Attributes channel="output" download="true" functional="false" offlineaccess="readwrite" onlineaccess="readwrite" />
+          <Default>0</Default>
+          <Name name="local:I32_x0020_Control">I32 Control</Name>
+        </Parameter>
+      </HostParameterSet>
+      <DriverInfo needsBusCycle="true" />
+    </Connector>
+  </Device>
+</DeviceDescription>
