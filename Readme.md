@@ -11,7 +11,7 @@ Considering this, you will only be able to access elements in the front panel of
 ## Configuration of the FPGA Module
 
 1. Create, compile and verify your FPGA VI. Keep in the front panel of this VI the controls and indicators you would like to access from DCAF.
-2. Load the FPGA Module in your DCAF configuration. There are two different approaches to configure the channels in the module. First, you can manually add the controls and indicators that will be used for communication as it is shown in the image below.
+2. Load the FPGA Module in your DCAF configuration. There are two different approaches to configure the channels in the module. The first one, you can manually add the controls and indicators that will be used for communication as it is shown in the image below.
 
 ![add_manual.jpg](images/add_manual.jpg)
 
@@ -27,9 +27,47 @@ Considering this, you will only be able to access elements in the front panel of
 
 ![add_load.jpg](images/add_load.jpg)
 
-4. Finally, configure the RIO device with the name of the FPGA resource that will run your compiled bitfile. Your final configuration would look similar as the one shown in the image below.
+4. Finally, configure the **RIO Device** with the name of the FPGA resource that will run your compiled bitfile. Your final configuration would look similar as the one shown in the image below.
 
-![final_config.jpg](images/final_config.jpg)
+![final_config.JPG](images/final_config.JPG)
+
+## Modifying the Runtime Template to Load and Execute the FPGA Bitfile
+For this module to work, the FPGA bitfile needs to be loaded and executed from your Host VI. The required steps to follow will depend on the template being used to launch your DCAF configuration. 
+
+### Using the DCAF Basic Execution Template
+1. Open the **Host Main.vi** from the template. You will modify the sections of code indicated in the image below.
+
+![basic_before.jpg](images/basic_before.jpg)
+
+2. Enable the section of code in the left by right clicking the *Diagram Disable Structure* and selecting *Enable This Subdiagram*. Configure the *Open FPGA VI Reference VI* to point to your FPGA VI, bitfile or build specification. 
+
+3. Enable the section of code in the right by right clicking the *Diagram Disable Structure* and selecting *Enable This Subdiagram*. Your final VI could look similar as the one in the image below.
+
+![basic_after.jpg](images/basic_after.jpg)
+
+### Using the DCAF Execution Service
+1. Open the **cRIO Main.vi** rom the template. You may need to modify the 3 subVIs highlighted in the image below.
+
+![execution_0.jpg](images/execution_0.jpg)
+
+2. Open the **DCAF Execution Service.vi**. Navigate to the *Load Bitfile* case in the internal *Case Structure*. Enable the section of code inside this case by right clicking the *Diagram Disable Structure* and selecting *Enable This Subdiagram*. Configure the *Open FPGA VI Reference VI* to point to your FPGA VI, bitfile or build specification. 
+
+![execution_load.jpg](images/execution_load.jpg)
+
+3. Navigate to the *Unload Bitfile* case in the internal *Case Structure*. Enable the section of code inside this case by right clicking the *Diagram Disable Structure* and selecting *Enable This Subdiagram*. 
+
+![execution_unload.jpg](images/execution_unload.jpg)
+
+4. Save and close the **DCAF Execution Service.vi**.
+
+5. Open the **load from file and runn all.vi**. Make sure a *Load Bitfile* command is being queued as shown in the image below. If not, modify this VI to add this functionality and save it.
+
+![execution_loadCommand.jpg](images/execution_loadCommand.jpg)
+
+6. Open the **safe state stop and close.vi**. Make sure an *Unload Bitfile* command is being queued as shown in the image below. If not, modify this VI to add this functionality and save it.
+
+![execution_unloadCommand.jpg](images/execution_unloadCommand.jpg)
+
 
 # Software Requirements
 
